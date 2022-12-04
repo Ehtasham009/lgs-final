@@ -222,6 +222,7 @@ canvas {
   canvas {
     --size: 198px !important;
   }
+   .planet-holder::after{border-radius: 200px;}
   .title-area .title {
     font-size: 100px;
   }
