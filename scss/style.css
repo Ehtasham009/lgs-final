@@ -220,7 +220,7 @@ canvas {
     --size: 200px;
   }
   canvas {
-    --size: 200px !important;
+    --size: 198px !important;
   }
   .title-area .title {
     font-size: 100px;
