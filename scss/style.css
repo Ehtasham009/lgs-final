@@ -67,19 +67,6 @@ body {
   box-shadow: 0 0 50px 0 rgb(0, 0, 0);
 }
 
-.planet-holder::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: url("https://raw.githubusercontent.com/Ehtasham009/lgs-final/main/images/circle-shadow.png");
-  position: absolute;
-  top: -1px;
-  left: 0px;
-  opacity: 0.95;
-  pointer-events: none;
-  background-position: center;
-}
-
 .planet-holder .logo-holdr {
   position: absolute;
   z-index: 99;
@@ -222,7 +209,6 @@ canvas {
   canvas {
     --size: 198px !important;
   }
-   .planet-holder::after{border-radius: 200px;}
   .title-area .title {
     font-size: 100px;
   }
