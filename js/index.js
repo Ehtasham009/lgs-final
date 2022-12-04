@@ -3,26 +3,28 @@ let planetHolder = document.querySelector('.planet-holder')
 
 const imgLoc = "https://raw.githubusercontent.com/Ehtasham009/lgs-final/main/images/final-globe.png";
 let camera = new THREE.PerspectiveCamera(45, planetHolder.offsetWidth / planetHolder.offsetHeight),
-light = new THREE.PointLight(0xFFFFFF, 2, 5000);
+light = new THREE.PointLight(0x000000, 1, 2000);
 camera.position.set(1300, 0, 0),
 scene = new THREE.Scene();
 camera.lookAt(scene.position);
 light.position.set(2000, 2000, 1500);
-let marsGeo = new THREE.SphereGeometry (500, 32, 32),
+let marsGeo = new THREE.SphereGeometry (500, 20, 32),
 marsMaterial = new THREE.MeshPhongMaterial(),
 marsMesh = new THREE.Mesh(marsGeo, marsMaterial);
 scene.add(marsMesh);   
 let loader = new THREE.TextureLoader();
 marsMaterial.map = loader.load(imgLoc);
-var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 1);
-var dirLight = new THREE.DirectionalLight(0x000000, 0.1);
+
+var hemiLight = new THREE.HemisphereLight(0xffffff , 0x000000,  1);
+var dirLight = new THREE.DirectionalLight(0xffffff , 0.4, 0x000000);
 hemiLight.position.set(5, 100, 1000);
-hemiLight.matrixAutoUpdate = false;
+hemiLight.matrixAutoUpdate = true;
 hemiLight.updateMatrix();
 dirLight.position.set(30, 1, 1000);
 dirLight.castShadow = false;
 scene.add(hemiLight);
 scene.add(dirLight);
+
 let wraper = document.querySelector('.planet-holder')
 let renderer = new THREE.WebGLRenderer({antialiasing : false, alpha: true, antialias: true});
 renderer.setSize(window.innerWidth - 40, window.innerHeight -40)       
