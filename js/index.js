@@ -1,7 +1,8 @@
 let clock = new THREE.Clock();
 let planetHolder = document.querySelector('.planet-holder')
-const imgLoc = "https://raw.githubusercontent.com/Ehtasham009/lgs-final/main/images/final-globe.png";
-let camera = new THREE.PerspectiveCamera(45, planetHolder.offsetWidth / planetHolder.offsetHeight, 0.1, 10000),
+
+const imgLoc = "../images/final-globe.png";
+let camera = new THREE.PerspectiveCamera(45, planetHolder.offsetWidth / planetHolder.offsetHeight),
 light = new THREE.PointLight(0xFFFFFF, 2, 5000);
 camera.position.set(1300, 0, 0),
 scene = new THREE.Scene();
