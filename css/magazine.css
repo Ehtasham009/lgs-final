@@ -118,7 +118,7 @@
 }
 
 .magazine-viewport .loader{
-	background-image:url("../images/loader.gif");
+	background-image:url("https://raw.githubusercontent.com/Ehtasham009/lgs-final/main/images/loader.gif");
 	width:22px;
 	height:22px;
 	position:absolute;
@@ -159,7 +159,7 @@
 
 .magazine-viewport .previous-button-hover,
 .magazine-viewport .previous-button-down{
-	background-image:url("/images/arrows.png");
+	background-image:url("https://raw.githubusercontent.com/Ehtasham009/lgs-final/main/images/arrows.png");
 	background-position:-4px 284px;
 	background-repeat:no-repeat;
 }
@@ -171,7 +171,7 @@
 
 .magazine-viewport .next-button-hover,
 .magazine-viewport .next-button-down{
-	background-image:url("/images/arrows.png");
+	background-image:url("https://raw.githubusercontent.com/Ehtasham009/lgs-final/main/images/arrows.png");
 	background-position:-38px 284px;
 	background-repeat:no-repeat;
 }
