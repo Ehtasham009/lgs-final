@@ -337,6 +337,7 @@
 .magazine-viewport .bottom .thumb-slider-holder .image-holder{height: 60px; width: 70px; min-width: 70px; background: white; cursor: pointer;}
 .magazine-viewport .bottom .thumb-slider-holder .image-holder:nth-child(odd){margin-right: 10px;}
 
-@media (max-width: 700px) {
-	.bottom{display: none;}
+@media (max-width: 992px) {
+	.magazine-viewport .bottom{left: 0; top: 50%;transform: translateY(-50%) rotate(90deg); align-content: flex-end; padding-bottom: 20px;}
 } 
+
