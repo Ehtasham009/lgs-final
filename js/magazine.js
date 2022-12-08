@@ -88,23 +88,23 @@ function loadRegions(page, element) {
 
 // Add region
 
-function addRegion(region, pageElement) {
+// function addRegion(region, pageElement) {
 	
-	var reg = $('<div />', {'class': 'region  ' + region['class']}),
-		options = $('.magazine').turn('options'),
-		pageWidth = options.width/2,
-		pageHeight = options.height;
+// 	var reg = $('<div />', {'class': 'region  ' + region['class']}),
+// 		options = $('.magazine').turn('options'),
+// 		pageWidth = options.width/2,
+// 		pageHeight = options.height;
 
-	reg.css({
-		top: Math.round(region.y/pageHeight*100)+'%',
-		left: Math.round(region.x/pageWidth*100)+'%',
-		width: Math.round(region.width/pageWidth*100)+'%',
-		height: Math.round(region.height/pageHeight*100)+'%'
-	}).attr('region-data', $.param(region.data||''));
+// 	reg.css({
+// 		top: Math.round(region.y/pageHeight*100)+'%',
+// 		left: Math.round(region.x/pageWidth*100)+'%',
+// 		width: Math.round(region.width/pageWidth*100)+'%',
+// 		height: Math.round(region.height/pageHeight*100)+'%'
+// 	}).attr('region-data', $.param(region.data||''));
 
 
-	reg.appendTo(pageElement);
-}
+// 	reg.appendTo(pageElement);
+// }
 
 // Process click on a region
 
@@ -163,37 +163,37 @@ function processRegion(region, regionType) {
 
 // Load large page
 
-function loadLargePage(page, pageElement) {
+// function loadLargePage(page, pageElement) {
 	
-	var img = $('<img />');
+// 	var img = $('<img />');
 
-	img.load(function() {
+// 	img.load(function() {
 
-		var prevImg = pageElement.find('img');
-		$(this).css({width: '100%', height: '100%'});
-		$(this).appendTo(pageElement);
-		prevImg.remove();
+// 		var prevImg = pageElement.find('img');
+// 		$(this).css({width: '100%', height: '100%'});
+// 		$(this).appendTo(pageElement);
+// 		prevImg.remove();
 		
-	});
+// 	});
 
-	// Loadnew page
+// 	// Loadnew page
 	
-	img.attr('src', 'pages/' +  page + '.png');
-}
+// 	img.attr('src', 'pages/' +  page + '.png');
+// }
 
 // Load small page
 
-function loadSmallPage(page, pageElement) {
+// function loadSmallPage(page, pageElement) {
 	
-	var img = pageElement.find('img');
+// 	var img = pageElement.find('img');
 
-	img.css({width: '100%', height: '100%'});
+// 	img.css({width: '100%', height: '100%'});
 
-	img.unbind('load');
-	// Loadnew page
+// 	img.unbind('load');
+// 	// Loadnew page
 
-	img.attr('src', 'pages/' +  page + '.png');
-}
+// 	img.attr('src', 'pages/' +  page + '.png');
+// }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488
 
