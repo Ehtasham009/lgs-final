@@ -27,7 +27,7 @@ function loadPage(page, pageElement) {
 	
 	// Create an image element
 
-	var content_element = $('<embed />');
+	var content_element = $('<iframe></iframe>');
 
 	content_element.mousedown(function(e) {
 		e.preventDefault();
