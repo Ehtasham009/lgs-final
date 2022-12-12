@@ -24,31 +24,22 @@ function addPage(page, book) {
 
 function loadPage(page, pageElement) {
 
+	
 	// Create an image element
 
-	var img = $('<img />');
+	var content_element = $('<embed />');
 
-	img.mousedown(function(e) {
+	content_element.mousedown(function(e) {
 		e.preventDefault();
 	});
 
-	img.load(function() {
-		
-		// Set the size
-		$(this).css({width: '100%', height: '100%'});
-
-		// Add the image to the page after loaded
-
-		$(this).appendTo(pageElement);
-
-		// Remove the loader indicator
-		
-		pageElement.find('.loader').remove();
-	});
+	$(content_element).css({width: '100%', height: '100%'});
+	pageElement.append(content_element);
+	pageElement.find('.loader').remove();
 
 	// Load the page
 
-	img.attr('src', 'pages/' +  page + '.png');
+	content_element.attr('src', 'pages/' +  1 + '.pdf');
 
 	loadRegions(page, pageElement);
 }
@@ -76,35 +67,8 @@ function zoomTo(event) {
 // Load regions
 
 function loadRegions(page, element) {
-
-	// $.getJSON('pages/'+page+'-regions.json').
-	// 	done(function(data) {
-
-	// 		$.each(data, function(key, region) {
-	// 			addRegion(region, element);
-	// 		});
-	// 	});
 }
 
-// Add region
-
-// function addRegion(region, pageElement) {
-	
-// 	var reg = $('<div />', {'class': 'region  ' + region['class']}),
-// 		options = $('.magazine').turn('options'),
-// 		pageWidth = options.width/2,
-// 		pageHeight = options.height;
-
-// 	reg.css({
-// 		top: Math.round(region.y/pageHeight*100)+'%',
-// 		left: Math.round(region.x/pageWidth*100)+'%',
-// 		width: Math.round(region.width/pageWidth*100)+'%',
-// 		height: Math.round(region.height/pageHeight*100)+'%'
-// 	}).attr('region-data', $.param(region.data||''));
-
-
-// 	reg.appendTo(pageElement);
-// }
 
 // Process click on a region
 
