@@ -67,19 +67,6 @@ body {
   box-shadow: 0 0 50px 0 rgb(0, 0, 0);
 }
 
-.planet-holder::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: url("/images/circle-shadow.png");
-  position: absolute;
-  top: -1px;
-  left: 0px;
-  opacity: 0.95;
-  pointer-events: none;
-  background-position: center;
-}
-
 .planet-holder .logo-holdr {
   position: absolute;
   z-index: 99;
@@ -92,12 +79,6 @@ body {
 
 .planet-holder .logo-holdr img {
   width: 100%;
-}
-
-.planet-holder canvas {
-  --size: 300px;
-  height: var(--size) !important;
-  width: var(--size) !important;
 }
 
 .image-holder {
@@ -193,15 +174,13 @@ canvas {
 
 @media (max-width: 1280px) {
   .planet-holder {
-    --size: 260px;
+    --size: 260px !important;
   }
   #marsloc {
     --size: 260px;
   }
   canvas {
-    --size: 260px;
-    height: var(--size) !important;
-    width: var(--size) !important;
+    --size: 260px !important;
   }
 }
 @media (max-width: 1080px) {
@@ -212,9 +191,7 @@ canvas {
     --size: 230px;
   }
   canvas {
-    --size: 230px;
-    height: var(--size) !important;
-    width: var(--size) !important;
+    --size: 230px !important;
   }
   .title-area .title {
     font-size: 120px;
@@ -231,9 +208,7 @@ canvas {
     --size: 200px;
   }
   canvas {
-    --size: 200px;
-    height: var(--size) !important;
-    width: var(--size) !important;
+    --size: 200px !important;
   }
   .title-area .title {
     font-size: 100px;
