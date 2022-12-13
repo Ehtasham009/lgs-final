@@ -94,6 +94,12 @@ body {
   width: 100%;
 }
 
+.planet-holder canvas {
+  --size: 300px;
+  height: var(--size) !important;
+  width: var(--size) !important;
+}
+
 .image-holder {
   display: flex;
   width: 100%;
@@ -194,6 +200,8 @@ canvas {
   }
   canvas {
     --size: 260px;
+    height: var(--size) !important;
+    width: var(--size) !important;
   }
 }
 @media (max-width: 1080px) {
@@ -205,6 +213,8 @@ canvas {
   }
   canvas {
     --size: 230px;
+    height: var(--size) !important;
+    width: var(--size) !important;
   }
   .title-area .title {
     font-size: 120px;
@@ -222,6 +232,8 @@ canvas {
   }
   canvas {
     --size: 200px;
+    height: var(--size) !important;
+    width: var(--size) !important;
   }
   .title-area .title {
     font-size: 100px;

@@ -24,6 +24,8 @@ body {
 .planet-holder::after{content: ""; height: 100%; width: 100%; background: url('/images/circle-shadow.png'); position: absolute; top: -1px; left: -0px; opacity: 0.95; pointer-events: none; background-position: center;}
 .planet-holder .logo-holdr{position: absolute; z-index: 99; pointer-events: none; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%;}
 .planet-holder .logo-holdr img{width: 100%;;}
+.planet-holder canvas{--size: 300px; height: var(--size) !important; width: var(--size) !important;}
+
 
 .image-holder{display: flex; width: 100%;}
 .image-holder img{min-width: 100%; max-width: 100%; object-fit: cover;}
@@ -75,13 +77,13 @@ canvas{
   @media (max-width: 1280px) {
     .planet-holder{--size: 260px}
     #marsloc{--size: 260px}
-    canvas{--size: 260px}
+    canvas{--size: 260px; height: var(--size) !important; width: var(--size) !important;}
   }
   
   @media (max-width: 1080px) {
     .planet-holder{--size: 230px}
     #marsloc{--size: 230px}
-    canvas{--size: 230px}
+    canvas{--size: 230px; height: var(--size) !important; width: var(--size) !important;}
     .title-area .title{font-size: 120px;}
     .title-area span{font-size: 14px;}
   }
@@ -91,6 +93,6 @@ canvas{
   @media (max-width: 600px) {
     .planet-holder{--size: 200px}
     #marsloc{--size: 200px}
-    canvas{--size: 200px}
+    canvas{--size: 200px; height: var(--size) !important; width: var(--size) !important;}
     .title-area .title{font-size: 100px;}
   }
