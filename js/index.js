@@ -54,7 +54,7 @@ marsloc.addEventListener('mouseup', function() {
 })
 
 
-document.querySelector('.planet-holder').addEventListener('click', function () {
+document.querySelector('.content-holder').addEventListener('click', function () {
   document.querySelector('body').classList.add('flipbook-show')
   
 })
@@ -63,11 +63,11 @@ document.querySelector('.close-modal-icon').addEventListener('click', function()
   document.querySelector('body').classList.remove('flipbook-show')
 })
 
-  document.querySelector('.thumbs-list-icon').addEventListener('click', function () {
-    document.querySelector('body').classList.add('flipbook-thumbs-show')
-    
-  })
-  document.querySelector('.close-thumbs-list').addEventListener('click', function () {
-    document.querySelector('body').classList.remove('flipbook-thumbs-show')
-    
-  })
+// document.querySelector('.thumbs-list-icon').addEventListener('click', function () {
+//   document.querySelector('body').classList.add('flipbook-thumbs-show')
+  
+// })
+// document.querySelector('.close-thumbs-list').addEventListener('click', function () {
+//   document.querySelector('body').classList.remove('flipbook-thumbs-show')
+  
+// })

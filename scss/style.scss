@@ -69,7 +69,7 @@ canvas{
 
 .thumbs-list-icon{position: absolute; z-index: 9999; top: 20px; left: 20px; color: white; cursor: pointer; color: white;}
 
-.flipbook-modal{opacity: 0; pointer-events: none; position: absolute; top: 0; left: 0; background: #121b38; z-index: 9999; transition: 0.3s all;}
+.flipbook-modal{opacity: 0; pointer-events: none; position: absolute; top: 0; left: 0; background: #121b38; z-index: 9999; transition: 0.3s all; width: 100%;}
 .flipbook-show .flipbook-modal{opacity: 1; pointer-events: initial;}
 
   @media (max-width: 1280px) {

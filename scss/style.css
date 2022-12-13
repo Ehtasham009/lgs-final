@@ -67,6 +67,19 @@ body {
   box-shadow: 0 0 50px 0 rgb(0, 0, 0);
 }
 
+.planet-holder::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("/images/circle-shadow.png");
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  opacity: 0.95;
+  pointer-events: none;
+  background-position: center;
+}
+
 .planet-holder .logo-holdr {
   position: absolute;
   z-index: 99;
@@ -164,6 +177,7 @@ canvas {
   background: #121b38;
   z-index: 9999;
   transition: 0.3s all;
+  width: 100%;
 }
 
 .flipbook-show .flipbook-modal {
@@ -179,7 +193,7 @@ canvas {
     --size: 260px;
   }
   canvas {
-    --size: 260px !important;
+    --size: 260px;
   }
 }
 @media (max-width: 1080px) {
@@ -190,7 +204,7 @@ canvas {
     --size: 230px;
   }
   canvas {
-    --size: 230px !important;
+    --size: 230px;
   }
   .title-area .title {
     font-size: 120px;
@@ -207,7 +221,7 @@ canvas {
     --size: 200px;
   }
   canvas {
-    --size: 198px !important;
+    --size: 200px;
   }
   .title-area .title {
     font-size: 100px;
