@@ -174,7 +174,7 @@ canvas {
 
 @media (max-width: 1280px) {
   .planet-holder {
-    --size: 260px !important;
+    --size: 260px;
   }
   #marsloc {
     --size: 260px;
@@ -184,15 +184,6 @@ canvas {
   }
 }
 @media (max-width: 1080px) {
-  .planet-holder {
-    --size: 230px;
-  }
-  #marsloc {
-    --size: 230px;
-  }
-  canvas {
-    --size: 230px !important;
-  }
   .title-area .title {
     font-size: 120px;
   }
@@ -201,16 +192,10 @@ canvas {
   }
 }
 @media (max-width: 600px) {
-  .planet-holder {
-    --size: 200px;
-  }
-  #marsloc {
-    --size: 200px;
-  }
-  canvas {
-    --size: 200px !important;
-  }
   .title-area .title {
     font-size: 100px;
+  }
+  .content-holder {
+    left: 44%;
   }
 }/*# sourceMappingURL=style.css.map */
